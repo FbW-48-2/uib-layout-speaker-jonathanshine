@@ -95,7 +95,6 @@ main {
     align-items: center;
     height: 75vh;
     padding: 2.5rem;
-    outline: 2px dotted lime;
 }
 
 #hero h1 {
@@ -196,5 +195,102 @@ footer {
     text-align: center;
     font-size: 1.6rem;
     padding: 2rem;
+    width: 100%;
 }
 /* END FOOTER ------------------------------------- */
+
+
+
+
+
+/* BROWSER/TABLET LAYOUT -------------------------- */
+@media (min-width: 500px) {
+    /* HEADER ----------------------------- */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+    }
+
+    #nav-logo {
+        width: 30%;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    nav ul {
+        flex-direction: row;        
+    }
+    /* END HEADER -------------------------- */
+
+
+
+    /* HERO -------------------------------- */
+    main {
+        padding-top: 10rem;
+    }
+
+    #hero {
+        height: 50vh;
+        width: 60%;
+        margin: auto;
+    }
+    #hero h1 {
+        align-self: flex-start;
+        font-size: 4rem;
+    }
+
+    #hero p {
+        align-self: flex-start;
+        font-size: 2.8rem;
+    }
+
+    #hero button {
+        align-self: flex-end;
+        margin-right: 5rem;
+    }
+
+    #hero > img {
+        display: none;
+    }
+    /* END HERO ---------------------------- */
+
+
+
+    /* PRODUCT SECTION --------------------- */
+    #product-container {
+        flex-direction: row;
+    }
+
+    .flex-card1,
+    .flex-card2,
+    .flex-card3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70rem;
+        width: 45rem;
+    }
+
+    .flex-card2 {
+        background-position: left;
+    }
+
+    .card-items {
+        height: 65rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 10rem;
+    }
+
+    .card-items p {
+        font-size: 3.2rem;
+        width: 70%;
+    }
+    /* END PRODUCT ------------------------- */
+}
+/* END BROWSER ------------------------------------ */
