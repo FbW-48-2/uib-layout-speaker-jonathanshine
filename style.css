@@ -186,3 +186,15 @@ main {
     margin: 2rem auto;
 }
 /* END PRODUCT ------------------------------------ */
+
+
+
+
+
+/* FOOTER STYLING --------------------------------- */
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+/* END FOOTER ------------------------------------- */
